@@ -1,77 +1,42 @@
-body:has(.colorStreamerMode_e927c0) .attachmentContentItem_ef9fc2 {
-    filter: blur(30px);
-    transition: .3s;
-}
-
-body:has(.colorStreamerMode_e927c0) .messageContent__21e69 {
-    filter: blur(6px);
-    transition: .3s;
-}
-
-body:has(.colorStreamerMode_e927c0) .embed_d3cbe3 {
-    filter: blur(6px);
-    transition: .3s;
-}
-
-body:has(.colorStreamerMode_e927c0) .listItem_fa7b36 {
-    filter: blur(6px);
-    transition: .3s;
-}
-
-body:has(.colorStreamerMode_e927c0) .channel_c21703 {
+body:has(.colorStreamerMode_e927c0) .attachmentContentItem_ef9fc2,
+body:has(.colorStreamerMode_e927c0) .messageContent__21e69,
+body:has(.colorStreamerMode_e927c0) .embed_d3cbe3,
+body:has(.colorStreamerMode_e927c0) .listItem_fa7b36,
+body:has(.colorStreamerMode_e927c0) .channel_c21703,
+body:has(.colorStreamerMode_e927c0) .peopleListItem_d14722,
+body:has(.colorStreamerMode_e927c0) .member_aa4760,
+body:has(.colorStreamerMode_e927c0) .container__7c79d,
+body:has(.colorStreamerMode_e927c0) .containerDefault__3187b,
+body:has(.colorStreamerMode_e927c0) .username_d30d99,
+body:has(.colorStreamerMode_e927c0) .header__39b23,
+body:has(.colorStreamerMode_e927c0) .children__32014 {
     filter: blur(10px);
     transition: .3s;
 }
 
-body:has(.colorStreamerMode_e927c0) .peopleListItem_d14722 {
-    filter: blur(10px);
-    transition: .3s;
-}
-
-body.youcanleaknow .attachmentContentItem_ef9fc2 {
-    filter: blur(0px) !important;
-}
-
-body.youcanleaknow .messageContent__21e69 {
-    filter: blur(0px) !important;
-}
-
-body.youcanleaknow .embed_d3cbe3 {
-    filter: blur(0px) !important;
-}
-
-body.youcanleaknow .listItem_fa7b36 {
-    filter: blur(0px) !important;
-}
-
-body.youcanleaknow .channel_c21703 {
-    filter: blur(0px) !important;
-}
-
-body.youcanleaknow .peopleListItem_d14722 {
-    filter: blur(0px) !important;
-}
-
-body.hoverToView .messageContent__21e69:hover {
-    filter: blur(0px) !important;
-}
-
-body.hoverToView .embed_d3cbe3:hover {
-    filter: blur(0px) !important;
-}
-
-body.hoverToView .attachmentContentItem_ef9fc2:hover {
-    filter: blur(0px) !important;
-}
-
-body.hoverToView .listItem_fa7b36:hover {
-    filter: blur(0px) !important;
-}
-
-body.hoverToView .channel_c21703:hover {
-    filter: blur(0px) !important;
-}
-
-body.hoverToView .peopleListItem_d14722:hover {
+body.youcanleaknow .attachmentContentItem_ef9fc2,
+body.youcanleaknow .messageContent__21e69,
+body.youcanleaknow .embed_d3cbe3,
+body.youcanleaknow .listItem_fa7b36,
+body.youcanleaknow .channel_c21703,
+body.youcanleaknow .peopleListItem_d14722,
+body.youcanleaknow .member_aa4760,
+body.youcanleaknow .container__7c79d,
+body.youcanleaknow .containerDefault__3187b,
+body.youcanleaknow .username_d30d99,
+body.youcanleaknow .header__39b23,
+body.youcanleaknow .children__32014,
+body.hoverToView .messageContent__21e69:hover,
+body.hoverToView .embed_d3cbe3:hover,
+body.hoverToView .attachmentContentItem_ef9fc2:hover,
+body.hoverToView .listItem_fa7b36:hover,
+body.hoverToView .channel_c21703:hover,
+body.hoverToView .peopleListItem_d14722:hover,
+body.hoverToView .member_aa4760:hover,
+body.hoverToView .container__7c79d:hover,
+body.hoverToView .containerDefault__3187b:hover,
+body.hoverToView .header__39b23:hover,
+body.hoverToView .username_d30d99:hover,
+body.hoverToView .children__32014:hover {
     filter: blur(0px) !important;
 }
