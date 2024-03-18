@@ -31,6 +31,6 @@ body.hoverToView .container__7c79d:hover,
 body.hoverToView .containerDefault__3187b:hover,
 body.hoverToView .children__32014:hover,
 body.hoverToView .messageListItem__6a4fb:hover,
-body.hoverToView .userPanelOuter__880e5 {
+body.hoverToView .userPanelOuter__880e5:hover {
     filter: blur(0px) !important;
 }
