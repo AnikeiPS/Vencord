@@ -4,7 +4,9 @@ body:has(.colorStreamerMode_e927c0) .peopleListItem_d14722,
 body:has(.colorStreamerMode_e927c0) .member_aa4760,
 body:has(.colorStreamerMode_e927c0) .container__7c79d,
 body:has(.colorStreamerMode_e927c0) .containerDefault__3187b,
-body:has(.colorStreamerMode_e927c0) .children__32014 {
+body:has(.colorStreamerMode_e927c0) .children__32014,
+body:has(.colorStreamerMode_e927c0) .messageListItem__6a4fb,
+body:has(.colorStreamerMode_e927c0) .userPanelOuter__880e5 {
     filter: blur(10px);
     transition: .3s;
 }
@@ -27,6 +29,8 @@ body.hoverToView .peopleListItem_d14722:hover,
 body.hoverToView .member_aa4760:hover,
 body.hoverToView .container__7c79d:hover,
 body.hoverToView .containerDefault__3187b:hover,
-body.hoverToView .children__32014:hover {
+body.hoverToView .children__32014:hover,
+body.hoverToView .messageListItem__6a4fb:hover,
+body.hoverToView .userPanelOuter__880e5 {
     filter: blur(0px) !important;
 }
