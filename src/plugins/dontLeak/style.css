@@ -1,22 +1,14 @@
-body:has(.colorStreamerMode_e927c0) .attachmentContentItem_ef9fc2,
-body:has(.colorStreamerMode_e927c0) .messageContent__21e69,
-body:has(.colorStreamerMode_e927c0) .embed_d3cbe3,
 body:has(.colorStreamerMode_e927c0) .listItem_fa7b36,
 body:has(.colorStreamerMode_e927c0) .channel_c21703,
 body:has(.colorStreamerMode_e927c0) .peopleListItem_d14722,
 body:has(.colorStreamerMode_e927c0) .member_aa4760,
 body:has(.colorStreamerMode_e927c0) .container__7c79d,
 body:has(.colorStreamerMode_e927c0) .containerDefault__3187b,
-body:has(.colorStreamerMode_e927c0) .username_d30d99,
-body:has(.colorStreamerMode_e927c0) .header__39b23,
 body:has(.colorStreamerMode_e927c0) .children__32014 {
     filter: blur(10px);
     transition: .3s;
 }
 
-body.youcanleaknow .attachmentContentItem_ef9fc2,
-body.youcanleaknow .messageContent__21e69,
-body.youcanleaknow .embed_d3cbe3,
 body.youcanleaknow .listItem_fa7b36,
 body.youcanleaknow .channel_c21703,
 body.youcanleaknow .peopleListItem_d14722,
@@ -35,8 +27,6 @@ body.hoverToView .peopleListItem_d14722:hover,
 body.hoverToView .member_aa4760:hover,
 body.hoverToView .container__7c79d:hover,
 body.hoverToView .containerDefault__3187b:hover,
-body.hoverToView .header__39b23:hover,
-body.hoverToView .username_d30d99:hover,
 body.hoverToView .children__32014:hover {
     filter: blur(0px) !important;
 }
