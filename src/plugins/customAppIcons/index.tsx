@@ -69,7 +69,6 @@ export default definePlugin({
 
 
     start() {
-        new Logger("customAppIcons").warn("CustomAppIcons is in beta");
         const appIcons = JSON.parse(localStorage.getItem("vc_app_icons") ?? "[]");
         for (const icon of appIcons) {
             findByProps("ICONS", "ICONS_BY_ID").ICONS.push(icon);
