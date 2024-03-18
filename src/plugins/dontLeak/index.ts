@@ -37,7 +37,6 @@ export default definePlugin({
         document.addEventListener("keyup", keyUpHandler);
         document.addEventListener("keydown", keyDownHandler);
         updateClassList("hoverToView", settings.store.hoverToView);
-        updateClassList("hideinstreamermode", true);
         enableStyle(styles);
     },
     stop() {
