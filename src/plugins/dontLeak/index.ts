@@ -19,33 +19,25 @@ const settings = definePluginSettings({
         description: "The keybind to show the contents of a message.",
         default: "Insert",
         restartNeeded: false,
-    },
-    enableForStream: {
-        type: OptionType.BOOLEAN,
-        description: "Blur all messages in streamer mode.",
-        default: false,
-        restartNeeded: false,
-        onChange: () => {
-            updateClassList("hideinstreamermode", settings.store.enableForStream);
-        },
-    },
+    }
 });
 
 export default definePlugin({
     name: "Don't Leak!",
-    description: "Hide all message contents and attachments when you're streaming or sharing your screen.",
+    description: "Hide all message contents and attachments when you're streaming.",
     authors: [
         {
             id: 1101508982570504244n,
             name: "Perny",
-        },
+        }, 
+        Devs.ANIKEIPS
     ],
     settings,
     start() {
         document.addEventListener("keyup", keyUpHandler);
         document.addEventListener("keydown", keyDownHandler);
         updateClassList("hoverToView", settings.store.hoverToView);
-        updateClassList("hideinstreamermode", settings.store.enableForStream);
+        updateClassList("hideinstreamermode", true);
         enableStyle(styles);
     },
     stop() {

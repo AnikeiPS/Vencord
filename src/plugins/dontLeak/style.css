@@ -1,58 +1,77 @@
-body:has([aria-label="Share Your Screen"].buttonActive__407a7) .attachmentContentItem_ef9fc2 {
-    filter: blur(30px) brightness(0.1);
+body:has(.colorStreamerMode_e927c0) .attachmentContentItem_ef9fc2 {
+    filter: blur(30px);
     transition: .3s;
 }
 
-
-body:has([aria-label="Share Your Screen"].buttonActive__407a7) .messageContent__21e69 {
+body:has(.colorStreamerMode_e927c0) .messageContent__21e69 {
     filter: blur(6px);
     transition: .3s;
 }
 
-body:has([aria-label="Share Your Screen"].buttonActive__407a7) .embed_d3cbe3 {
+body:has(.colorStreamerMode_e927c0) .embed_d3cbe3 {
     filter: blur(6px);
     transition: .3s;
 }
 
-
-
-
-body.hideinstreamermode:has(.colorStreamerMode_e927c0) .attachmentContentItem_ef9fc2 {
-    filter: blur(30px) brightness(0.1);
-    transition: .3s;
-}
-
-
-body.hideinstreamermode:has(.colorStreamerMode_e927c0) .messageContent__21e69 {
+body:has(.colorStreamerMode_e927c0) .listItem_fa7b36 {
     filter: blur(6px);
     transition: .3s;
 }
 
-body.hideinstreamermode:has(.colorStreamerMode_e927c0) .embed_d3cbe3 {
-    filter: blur(6px);
+body:has(.colorStreamerMode_e927c0) .channel_c21703 {
+    filter: blur(10px);
+    transition: .3s;
+}
+
+body:has(.colorStreamerMode_e927c0) .peopleListItem_d14722 {
+    filter: blur(10px);
     transition: .3s;
 }
 
 body.youcanleaknow .attachmentContentItem_ef9fc2 {
-    filter: blur(0px) brightness(1)!important;
+    filter: blur(0px) !important;
 }
 
 body.youcanleaknow .messageContent__21e69 {
-    filter: blur(0px)!important;
+    filter: blur(0px) !important;
 }
 
 body.youcanleaknow .embed_d3cbe3 {
-    filter: blur(0px)!important;
+    filter: blur(0px) !important;
+}
+
+body.youcanleaknow .listItem_fa7b36 {
+    filter: blur(0px) !important;
+}
+
+body.youcanleaknow .channel_c21703 {
+    filter: blur(0px) !important;
+}
+
+body.youcanleaknow .peopleListItem_d14722 {
+    filter: blur(0px) !important;
 }
 
 body.hoverToView .messageContent__21e69:hover {
-    filter: blur(0px) brightness(1)!important;
+    filter: blur(0px) !important;
 }
 
 body.hoverToView .embed_d3cbe3:hover {
-    filter: blur(0px) brightness(1)!important;
+    filter: blur(0px) !important;
 }
 
 body.hoverToView .attachmentContentItem_ef9fc2:hover {
-    filter: blur(0px) brightness(1)!important;
+    filter: blur(0px) !important;
+}
+
+body.hoverToView .listItem_fa7b36:hover {
+    filter: blur(0px) !important;
+}
+
+body.hoverToView .channel_c21703:hover {
+    filter: blur(0px) !important;
+}
+
+body.hoverToView .peopleListItem_d14722:hover {
+    filter: blur(0px) !important;
 }
