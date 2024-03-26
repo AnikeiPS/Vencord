@@ -5,7 +5,6 @@ body:has(.colorStreamerMode_e927c0) .messageListItem__6a4fb,
 body:has(.colorStreamerMode_e927c0) .userPanelOuter__880e5,
 body:has(.colorStreamerMode_e927c0) .result__25f11,
 body:has(.colorStreamerMode_e927c0) .itemCard__1f162,
-body:has(.colorStreamerMode_e927c0) .channelNotice__8f7b2,
 body:has(.colorStreamerMode_e927c0) .card__691f2 {
     filter: blur(10px);
     transition: .3s;
@@ -20,7 +19,6 @@ body.youcanleaknow .messageListItem__6a4fb,
 body.youcanleaknow .userPanelOuter__880e5,
 body.youcanleaknow .result__25f11,
 body.youcanleaknow .itemCard__1f162,
-body.youcanleaknow .channelNotice__8f7b2,
 body.youcanleaknow .card__691f2,
 body.hoverToView .messageContent__21e69:hover,
 body.hoverToView .embed_d3cbe3:hover,
@@ -32,7 +30,6 @@ body.hoverToView .messageListItem__6a4fb:hover,
 body.hoverToView .userPanelOuter__880e5:hover,
 body.hoverToView .result__25f11:hover,
 body.hoverToView .itemCard__1f162:hover,
-body.hoverToView .channelNotice__8f7b2:hover,
 body.hoverToView .card__691f2:hover {
     filter: blur(0px) !important;
 }
