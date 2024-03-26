@@ -16,10 +16,11 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-import { definePluginSettings } from "@api/Settings";
-import { Devs } from "@utils/constants";
-import definePlugin, { OptionType } from "@utils/types";
-import type { Message } from "discord-types/general";
+import {definePluginSettings} from "@api/Settings";
+import {Devs} from "@utils/constants";
+import definePlugin, {OptionType} from "@utils/types";
+import type {Message} from "discord-types/general";
+import {findByProps} from "@webpack";
 
 const settings = definePluginSettings({
     userList: {
@@ -47,6 +48,12 @@ const settings = definePluginSettings({
         description: "Invert Discord's shift replying behaviour (enable to make shift reply mention user)",
         type: OptionType.BOOLEAN,
         default: false,
+    },
+    blockReplyPings: {
+        description: "Block reply-pings from other users",
+        type: OptionType.BOOLEAN,
+        default: false,
+        restartNeeded: true
     }
 });
 
@@ -71,4 +78,13 @@ export default definePlugin({
             }
         }
     ],
+    start() {
+        if (settings.store.blockReplyPings) {
+            findByProps("addInterceptor").addInterceptor((e: { type: string; message: { referenced_message: any; mentions: never[]; }; }) => {
+                if (e.type === "MESSAGE_CREATE" && e.message.referenced_message) {
+                    e.message.mentions = [];
+                }
+            })
+        }
+    }
 });
