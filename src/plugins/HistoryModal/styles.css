@@ -22,6 +22,10 @@
     grid-area: a;
 }
 
+.c98-history-history {
+    cursor: pointer;
+}
+
 .c98-history-content:not(.c98-history-content-active) {
     visibility: hidden;
 }
@@ -37,6 +41,7 @@
     cursor: pointer;
     color: var(--interactive-normal);
     background: none;
+    border-radius: 4px;
 }
 
 .c98-history-timestamp {
