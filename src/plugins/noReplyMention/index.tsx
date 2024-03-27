@@ -80,9 +80,16 @@ export default definePlugin({
     ],
     start() {
         if (settings.store.blockReplyPings) {
-            findByProps("addInterceptor").addInterceptor((e: { type: string; message: { referenced_message: any; mentions: never[]; }; }) => {
+            findByProps("addInterceptor").addInterceptor(e => {
                 if (e.type === "MESSAGE_CREATE" && e.message.referenced_message) {
                     e.message.mentions = [];
+                }
+                if (e.type === "LOAD_MESSAGES_SUCCESS") {
+                    e.messages.forEach(msg => {
+                        if (msg.referenced_message) {
+                            msg.mentions = [];
+                        }
+                    })
                 }
             })
         }
