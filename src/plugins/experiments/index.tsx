@@ -79,7 +79,7 @@ export default definePlugin({
             }
         },
         {
-            find: ".isStaff=()",
+            find: '"isStaff",',
             predicate: () => settings.store.enableIsStaff,
             replacement: [
                 {
